@@ -1,1 +1,1 @@
-To run: `node {day}.js`
+To run: `node days/{day}.js`
