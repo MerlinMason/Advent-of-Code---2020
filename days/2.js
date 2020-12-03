@@ -3023,7 +3023,7 @@ const input = [
     },
 ];
 
-const part1 = () => {
+(() => {
     let validCount = 0;
 
     input.forEach(({
@@ -3035,10 +3035,8 @@ const part1 = () => {
         }
     });
 
-    console.log(validCount);
-};
-
-part1();
+    console.log(`Part 1: ${validCount}`);
+})();
 
 /*
 --- Part Two ---
@@ -3059,7 +3057,7 @@ Given the same example list from above:
 How many passwords are valid according to the new interpretation of the policies?
 */
 
-const part2 = () => {
+(() => {
     let validCount = 0;
 
     input.forEach(({
@@ -3073,7 +3071,5 @@ const part2 = () => {
         }
     });
 
-    console.log(validCount);
-};
-
-part2();
+    console.log(`Part 2: ${validCount}`);
+})();

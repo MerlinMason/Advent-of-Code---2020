@@ -231,8 +231,8 @@ const input = [
 // search input array for a number that matches our desired sum
 const checkForMatch = (x) => input.find((num) => num + x === 2020);
 
-const part1 = () => {
-    const multiplyCorrectPair = (a, b) => console.log(a * b);
+(() => {
+    const multiplyCorrectPair = (a, b) => console.log(`Part 1: ${a * b}`);
 
     for (let i = 0; i < input.length; i += 1) {
         const match = checkForMatch(input[i]);
@@ -242,9 +242,7 @@ const part1 = () => {
             break;
         }
     }
-};
-
-part1();
+})();
 
 /*
 --- Part Two ---
@@ -256,8 +254,8 @@ Using the above example again, the three entries that sum to 2020 are 979, 366, 
 In your expense report, what is the product of the three entries that sum to 2020?
 */
 
-const part2 = () => {
-    const multiplyCorrectTriplet = (a, b, c) => console.log(a * b * c);
+(() => {
+    const multiplyCorrectTriplet = (a, b, c) => console.log(`Part 2: ${a * b * c}`);
     let foundAnswer = false;
 
     for (let i1 = 0; i1 < input.length; i1 += 1) {
@@ -276,6 +274,4 @@ const part2 = () => {
             break;
         }
     }
-};
-
-part2();
+})();
